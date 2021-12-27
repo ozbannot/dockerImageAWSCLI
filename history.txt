@@ -1,0 +1,185 @@
+% docker --version
+Docker version 20.10.7, build f0df350
+% docker run --rm -it amazon/aws-cli command
+docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+See 'docker run --help'.
+% docker run --rm -it amazon/aws-cli command
+Unable to find image 'amazon/aws-cli:latest' locally
+latest: Pulling from amazon/aws-cli
+74f9a6be36f3: Pull complete 
+a0a98a10aa36: Pull complete 
+5aac9aaa2980: Pull complete 
+7542dc4e1de5: Pull complete 
+336adb13a380: Pull complete 
+Digest: sha256:1a7c46f73f029ae8f8403e194c93a18fb0888e8e34a2783a38a5db4e3dce0696
+Status: Downloaded newer image for amazon/aws-cli:latest
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument command: Invalid choice, valid choices are:
+
+accessanalyzer                           | account                                 
+acm                                      | acm-pca                                 
+alexaforbusiness                         | amp                                     
+amplify                                  | amplifybackend                          
+amplifyuibuilder                         | apigateway                              
+apigatewaymanagementapi                  | apigatewayv2                            
+appconfig                                | appconfigdata                           
+appflow                                  | appintegrations                         
+application-autoscaling                  | application-insights                    
+applicationcostprofiler                  | appmesh                                 
+apprunner                                | appstream                               
+appsync                                  | athena                                  
+auditmanager                             | autoscaling                             
+autoscaling-plans                        | backup                                  
+backup-gateway                           | batch                                   
+braket                                   | budgets                                 
+ce                                       | chime                                   
+chime-sdk-identity                       | chime-sdk-meetings                      
+chime-sdk-messaging                      | cloud9                                  
+cloudcontrol                             | clouddirectory                          
+cloudformation                           | cloudfront                              
+cloudhsm                                 | cloudhsmv2                              
+cloudsearch                              | cloudsearchdomain                       
+cloudtrail                               | cloudwatch                              
+codeartifact                             | codebuild                               
+codecommit                               | codeguru-reviewer                       
+codeguruprofiler                         | codepipeline                            
+codestar                                 | codestar-connections                    
+codestar-notifications                   | cognito-identity                        
+cognito-idp                              | cognito-sync                            
+comprehend                               | comprehendmedical                       
+compute-optimizer                        | connect                                 
+connect-contact-lens                     | connectparticipant                      
+cur                                      | customer-profiles                       
+databrew                                 | dataexchange                            
+datapipeline                             | datasync                                
+dax                                      | detective                               
+devicefarm                               | devops-guru                             
+directconnect                            | discovery                               
+dlm                                      | dms                                     
+docdb                                    | drs                                     
+ds                                       | dynamodb                                
+dynamodbstreams                          | ebs                                     
+ec2                                      | ec2-instance-connect                    
+ecr                                      | ecr-public                              
+ecs                                      | efs                                     
+eks                                      | elastic-inference                       
+elasticache                              | elasticbeanstalk                        
+elastictranscoder                        | elb                                     
+elbv2                                    | emr                                     
+emr-containers                           | es                                      
+events                                   | evidently                               
+finspace                                 | finspace-data                           
+firehose                                 | fis                                     
+fms                                      | forecast                                
+forecastquery                            | frauddetector                           
+fsx                                      | gamelift                                
+glacier                                  | globalaccelerator                       
+glue                                     | grafana                                 
+greengrass                               | greengrassv2                            
+groundstation                            | guardduty                               
+health                                   | healthlake                              
+honeycode                                | iam                                     
+identitystore                            | imagebuilder                            
+importexport                             | inspector                               
+inspector2                               | iot                                     
+iot-data                                 | iot-jobs-data                           
+iot1click-devices                        | iot1click-projects                      
+iotanalytics                             | iotdeviceadvisor                        
+iotevents                                | iotevents-data                          
+iotfleethub                              | iotsecuretunneling                      
+iotsitewise                              | iotthingsgraph                          
+iottwinmaker                             | iotwireless                             
+ivs                                      | kafka                                   
+kafkaconnect                             | kendra                                  
+kinesis                                  | kinesis-video-archived-media            
+kinesis-video-media                      | kinesis-video-signaling                 
+kinesisanalytics                         | kinesisanalyticsv2                      
+kinesisvideo                             | kms                                     
+lakeformation                            | lambda                                  
+lex-models                               | lex-runtime                             
+lexv2-models                             | lexv2-runtime                           
+license-manager                          | lightsail                               
+location                                 | logs                                    
+lookoutequipment                         | lookoutmetrics                          
+lookoutvision                            | machinelearning                         
+macie                                    | macie2                                  
+managedblockchain                        | marketplace-catalog                     
+marketplace-entitlement                  | marketplacecommerceanalytics            
+mediaconnect                             | mediaconvert                            
+medialive                                | mediapackage                            
+mediapackage-vod                         | mediastore                              
+mediastore-data                          | mediatailor                             
+memorydb                                 | meteringmarketplace                     
+mgh                                      | mgn                                     
+migration-hub-refactor-spaces            | migrationhub-config                     
+migrationhubstrategy                     | mobile                                  
+mq                                       | mturk                                   
+mwaa                                     | neptune                                 
+network-firewall                         | networkmanager                          
+nimble                                   | opensearch                              
+opsworks                                 | opsworkscm                              
+organizations                            | outposts                                
+panorama                                 | personalize                             
+personalize-events                       | personalize-runtime                     
+pi                                       | pinpoint                                
+pinpoint-email                           | pinpoint-sms-voice                      
+polly                                    | pricing                                 
+proton                                   | qldb                                    
+qldb-session                             | quicksight                              
+ram                                      | rbin                                    
+rds                                      | rds-data                                
+redshift                                 | redshift-data                           
+rekognition                              | resiliencehub                           
+resource-groups                          | resourcegroupstaggingapi                
+robomaker                                | route53                                 
+route53-recovery-cluster                 | route53-recovery-control-config         
+route53-recovery-readiness               | route53domains                          
+route53resolver                          | rum                                     
+s3control                                | s3outposts                              
+sagemaker                                | sagemaker-a2i-runtime                   
+sagemaker-edge                           | sagemaker-featurestore-runtime          
+sagemaker-runtime                        | savingsplans                            
+schemas                                  | sdb                                     
+secretsmanager                           | securityhub                             
+serverlessrepo                           | service-quotas                          
+servicecatalog                           | servicecatalog-appregistry              
+servicediscovery                         | ses                                     
+sesv2                                    | shield                                  
+signer                                   | sms                                     
+snow-device-management                   | snowball                                
+sns                                      | sqs                                     
+ssm                                      | ssm-contacts                            
+ssm-incidents                            | sso                                     
+sso-admin                                | sso-oidc                                
+stepfunctions                            | storagegateway                          
+sts                                      | support                                 
+swf                                      | synthetics                              
+textract                                 | timestream-query                        
+timestream-write                         | transcribe                              
+transfer                                 | translate                               
+voice-id                                 | waf                                     
+waf-regional                             | wafv2                                   
+wellarchitected                          | wisdom                                  
+workdocs                                 | worklink                                
+workmail                                 | workmailmessageflow                     
+workspaces                               | workspaces-web                          
+xray                                     | s3api                                   
+s3                                       | ddb                                     
+configure                                | deploy                                  
+configservice                            | opsworks-cm                             
+history                                  | cli-dev                                 
+help                                    
+% docker run --rm -it amazon/aws-cli --version
+aws-cli/2.4.7 Python/3.8.8 Linux/5.10.25-linuxkit docker/aarch64.amzn.2 prompt/off
+% aws --version
+zsh: command not found: aws
+% docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli s3 ls
+
+Unable to locate credentials. You can configure credentials by running "aws configure".
