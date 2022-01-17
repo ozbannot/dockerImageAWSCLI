@@ -183,3 +183,14 @@ zsh: command not found: aws
 % docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli s3 ls
 
 Unable to locate credentials. You can configure credentials by running "aws configure".
+
+
+## その先の認証
+% docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli configure list
+
+Unable to locate credentials. You can configure credentials by running "aws configure".
+
+% cd ~/.aws
+% vi credentials vi config
+% docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli configure list
+↑認証がとおればOK
